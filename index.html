@@ -1,9 +1,10 @@
+
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
@@ -274,9 +275,9 @@ style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke
             <p>A Multiplayer Collectable Turn Based Strategy game built using Unity. This features a bespoke  Asynchronous Socket Server application to handle multiplayer connectivity.</p>
             <row>
                         <img src="https://img.icons8.com/ios-filled/24/000000/c-sharp-logo.png"  style="width:24px;height:24px"/>
+
+
 <img src="https://img.icons8.com/ios-filled/24/000000/unity.png" style="width:24px;height:24px"/>
-
-
                       </row>
 
           </div>
@@ -323,7 +324,7 @@ style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke
     <div class="about container">
       <div class="col-left">
         <div class="about-img">
-          <img src="./img/img-3.jpg" alt="img">
+          <img src="./img/portrait.png" alt="img" style="object-fit:  contain  ;">
         </div>
       </div>
       <div class="col-right">
@@ -393,7 +394,23 @@ style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke
 
   <script>
 
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
   </script>
 
 </body>
